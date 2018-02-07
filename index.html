@@ -2,42 +2,87 @@
 <html lang="en-eu">
 <head>
     <meta charset="UTF-8">
-    <title>Adrian Basic Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adrian Portfolio</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!--    Bootstrapp link   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 </head>
+    
 <body>
-    <!-- This is the navbar -->
-    <nav>
-        <div class="wrapper">
-            <h1>Adrian Fernandez</h1>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li id="last"><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>    
+
+<!--    This is bootstrap Navbar-->
+    
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Adrian Fernandez</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+<!--
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+-->
+            <li><a href="#">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a  id="last" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <!-- This is the wrapper -->
-    <div class="wrapper">
-        <section  class="clearfix">
-            <h2>I am graphic designer</h2>
-            <img src="assets/images/mypicture.png" alt="My-picture" >
+    
+    <!-- This is the main content section -->
+    
+    <div class="container">
+    <div class="row">
+      <section class="col-md-8">
+        <div class="page-header">
+          <h1>I am graphic designer</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+              <img src="assets/images/mypicture.png" alt="My-picture" class="img-circle img-responsive">
+          </div> 
+          <div class="col-md-8">
             <p>Professional Visual Designer with deep knowledge of web design. My current position as Art Director in Marketlogic allows me to work in a wide range of promotional products and campaigns for recognized brands. Skilled on advanced tools such as Webflow, Sketch, and Adobe XD; that make a huge impact on UX/UI design and prototyping.</p>
+              
             <p>Well oriented in the process of creation, managing, and planning web projects. Motivated to improve skills as a visual designer. Currently studying in a boot camp to become front-end web developer.</p>
-        </section>
-        <aside>
-            <h3>Connect with me</h3>
+              
+          </div>
+        </div>
+      </section>
+
+      <aside class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Connect with me</h2>
+          </div>
+          <div class="panel-body">
             <a class="github" href="https://github.com/coafer"></a>
             <a class="linkedin"></a>
             <a class="stack"></a>
-        </aside>
+          </div>
+        </div>
+      </aside>
     </div>
+  </div>
+
     <!-- This is the footer -->
     <footer>
         <div class="wrapper">
             <p>© Copyright 2018 Adrian Fernandez</p>
         </div>
     </footer>
+    
+<!-- BS Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

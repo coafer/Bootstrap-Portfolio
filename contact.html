@@ -2,23 +2,83 @@
 <html lang="en-eu">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Adrian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adrian Portfolio</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!--    Bootstrapp link   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 </head>
 <body>
-    <!-- This is the navbar -->
-    <nav>
-        <div class="wrapper">
-            <h1>Adrian Fernandez</h1>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li id="last"><a href="#">Contact</a></li>
-            </ul>
-        </div>    
+    
+ <!--    This is bootstrap Navbar-->
+    
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Adrian Fernandez</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+<!--
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+-->
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a  id="last" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <!-- This is the wrapper -->
+    
+    
+<!-- This is the main content section -->
+    
+    <div class="container">
+    <div class="row">
+      <section class="col-md-8">
+        <div class="page-header">
+          <h1>Drop me a Hi</h1>
+        </div>
+        <div class="row">
+            <form action="">
+                <div class="form-group">
+                    <label class="f_label" for="name">Name:</label>
+                    <input class="form-control f_input" type="text" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label class="f_label" for="email">Email:</label>
+                    <input type="email" class="form-control f_input" id="email" placeholder="Enter email" name="email">
+                </div>
+                    <label class="f_label" for="message">Message</label>
+                    <textarea name="message" class="form-control f_textarea" rows="10" cols="30">Feel free to comment.</textarea>
+                    <input class="btn btn-default" type="submit" value="Submit">
+            </form>
+        </div>
+      </section>
+
+      <aside class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Connect with me</h2>
+          </div>
+          <div class="panel-body">
+            <a class="github" href="https://github.com/coafer"></a>
+            <a class="linkedin"></a>
+            <a class="stack"></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+<!--
     <div class="wrapper">
         <section  class="clearfix">
             <h2>Drop me a Hi</h2>
@@ -39,11 +99,16 @@
             <a class="stack"></a>
         </aside>
     </div>
-    <!-- This is the footer -->
+-->
+      <!-- This is the footer -->
     <footer>
         <div class="wrapper">
             <p>© Copyright 2018 Adrian Fernandez</p>
         </div>
     </footer>
+    
+<!-- BS Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
